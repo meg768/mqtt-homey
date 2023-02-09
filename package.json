@@ -4,7 +4,9 @@
   "description": "Expose your Homey to MQTT",
   "main": "mqtt-homey.js",
   "scripts": {
-    "git-commit": "git add -A && git push && git commit -m '-' && git push"
+    "git-commit": "git add -A && git push && git commit -m '-' && git push",
+    "goto-github": "open https://github.com/meg768/mqtt-homey.git"
+
   },
   "repository": {
     "type": "git",

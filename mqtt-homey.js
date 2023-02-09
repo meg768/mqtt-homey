@@ -111,7 +111,7 @@ class App {
 
 	async run() {
 		try {
-			this.socket = io("http://homey-5d9c7ec99091850c3d2a43cc:3987");
+			this.socket = io(this.config.socket);
 			this.mqtt = Mqtt.connect(this.config.host, {username:this.config.username, password:this.config.password, port:this.config.port});
 			this.mqtt = MqttDispatch(this.mqtt);
 			this.subscribing = false;
